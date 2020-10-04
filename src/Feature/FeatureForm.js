@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 // Normalizes string as a slug - a string that is safe to use
 // in both URLs and html attributes
 import slugify from 'slugify';
-import FeatureItem from '../FeatureItem'
+import FeatureItem from './FeatureItem'
+
 
 
 export default class FeatureForm extends Component {
@@ -13,7 +14,7 @@ export default class FeatureForm extends Component {
             const featureHash = feature + '-' + idx; // processor
 
             return (
-                <Featureitem
+                <FeatureItem
                     key={featureHash}
                     name={feature}
                     options={this.props}
