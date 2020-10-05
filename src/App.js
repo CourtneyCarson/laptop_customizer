@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
-// Normalizes string as a slug - a string that is safe to use
-// in both URLs and html attributes
-import slugify from 'slugify';
-import Cart from './Cart/Cart'
+import Cart from './Cart';
 import './App.css';
-import FeatureForm from './Feature/FeatureForm'
-
+import FeatureForm from './FeatureForm';
 
 class App extends Component {
   state = {
@@ -37,8 +33,7 @@ class App extends Component {
     });
   };
 
-
-    render () {
+  render() {
     return (
       <div className="App">
         <header>
